@@ -13,7 +13,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "What is the movie title?" );
+        System.out.println( "What is the movie title ?" );
         Scanner scanner=new Scanner(System.in);
         String title=scanner.nextLine();
         System.out.println( "What is the movie genre?" );
