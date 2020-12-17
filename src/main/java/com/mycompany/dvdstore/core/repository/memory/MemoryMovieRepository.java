@@ -1,8 +1,7 @@
-package com.mycompany.dvdstore.repository.memory;
+package com.mycompany.dvdstore.core.repository.memory;
 
-import com.mycompany.dvdstore.entity.Movie;
-import com.mycompany.dvdstore.repository.MovieRepositoryInterface;
-import org.springframework.stereotype.Repository;
+import com.mycompany.dvdstore.core.entity.Movie;
+import com.mycompany.dvdstore.core.repository.MovieRepositoryInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,5 +14,10 @@ public class MemoryMovieRepository implements MovieRepositoryInterface {
     public void add (Movie movie){
         movies.add(movie);
         System.out.println("The movie "+movie.getTitle()+" has been added.  "+movie.getGenre());
+    }
+
+    @Override
+    public List<Movie> list() {
+        throw new UnsupportedOperationException();
     }
 }
